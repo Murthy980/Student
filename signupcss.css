@@ -1,0 +1,137 @@
+	body{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(headway-537308-unsplash.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	overflow-x:hidden;
+	height:1500px;
+
+}
+h1{
+	font-size:40px;
+	color: white;
+	text-align:center;
+	font-family: Trebuchet MS;
+}
+
+h2{
+	position:absolute;
+	top:150px;
+	font-size:35px;
+	margin-left:44%;
+	font-family:Trebuchet MS;
+	color:navajowhite;
+}
+
+
+.container {
+  width: 360px;
+  margin: auto;
+}
+
+
+.form {
+  position: absolute;
+  top:35%;
+  left:32%;
+  width: 450px;
+  height: 1000px;
+  margin: 0 auto 100px;
+  padding: 60px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.form input {
+ padding:15px;
+
+ margin: 0 0 23px;
+}
+input[type="date"] {
+    width: 34%;
+}
+
+
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: rgba(16,89,255, 1);
+  width: 50%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+
+input[type="text"] {
+    width: 70%;
+}
+input[type="input"] {
+    width: 70%;
+}
+input[type="email"] {
+    width: 70%;
+}
+input[type="date"] {
+    width: 70%;
+}
+input[type="password"] {
+    width: 70%;
+}
+
+input[type="submit"]{
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	background-color: blue;
+	width: 78%;
+	padding: 15px;
+	color: white;
+	font-size: 14px;
+	margin:none;
+	border:none;
+}
+
+label {
+    font-size: 20px;
+	color:white;
+}
+.form button a{
+  color: #FFFFFF;
+
+}
+.nav {
+	height:35px;
+	width:100%;
+	display:inline block;
+	color: blue;
+	padding:0px;
+	margin:0px;
+	background-color:ivory;
+	font-family:arial;
+	font-size: 25px;
+	text-decoration:none;
+}
+.home {
+	position:relative;
+	margin-left:20%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none
+}
+.student {
+	position:relative;
+	margin-left:20%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none
+}
+.admin {
+	position:relative;
+	margin-left:20%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none
+}

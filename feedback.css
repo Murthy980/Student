@@ -1,0 +1,96 @@
+h1 {
+	text-align:center;
+	color:white;
+	font-size:40px;
+	font-family: Trebuchet MS;
+
+}
+body {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(headway-537308-unsplash.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	overflow-x:hidden;
+}
+h2 {
+	text-align:center;
+	color:snow;
+	font-family: Trebuchet MS;
+}
+h3 	 {
+	position:relative;
+	color:ivory;
+	margin-left:15%;
+	font-family: arial;
+}
+input {
+	position:relative;
+	font-family:arial;
+	margin-left:5%;
+}
+.ex {
+	position:relative;
+	color:black;
+	margin-left:18%;
+}
+.form	{
+	color:ivory;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	margin-left:22%;
+	margin-right:22%;
+}
+.suggest{
+	position:relative;
+	color:black;
+	margin-left:20%;
+}
+.submit {
+	position:relative;
+	margin-left:47%;
+}
+.nav {
+	height:35px;
+	width:110%; 
+	display:inline block;
+	padding:0px;
+	margin:0px;
+	background-color:ivory;
+	font-family:arial;
+	font-size: 25px;
+	text-decoration:none;
+	color: blue;
+	
+}
+.reg {
+	position:relative;
+	margin-left:13%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none;
+	color: #4F0972;
+	
+}
+.gdcard {
+	position:relative;
+	margin-left:13%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none;
+	color: #4F0972;
+}
+.fdback {
+	position:relative;
+	margin-left:13%;
+	font-family:arial;	
+	font-size: 30px;
+	text-decoration:none;
+	color: #4F0972;
+}
+.home {
+	position:relative;
+	margin-left:10%;
+	font-family:arial;	
+	font-size: 30px;
+	text-decoration:none;
+	color: #4F0972;
+	
+}

@@ -1,0 +1,108 @@
+
+h1 {
+	font-size:40px;
+	text-align:center;
+	font-family:Trebuchet MS;
+	color:white;
+}
+body {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(headway-537308-unsplash.jpg);
+	background-repeat:repeat;
+	background-size:cover;
+	overflow-x:hidden;
+}
+.nav {
+	height:35px;
+	width:100%; 
+	display:inline block;
+	color: blue;
+	padding:0px;
+	margin:0px;
+	background-color:ivory;
+	font-family:arial;
+	font-size: 25px;
+	text-decoration:none;
+}
+.home {
+	position:relative;
+	margin-left:20%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none
+}
+.student {
+	position:relative;
+	margin-left:20%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none
+}
+.admin {
+	position:relative;
+	margin-left:20%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none
+}
+.form {
+  position: absolute;
+  top:35%;
+  left:29%;
+  
+  width: 500px;
+  height: 750px;
+  padding: 60px;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.form input {
+  background: #f2f2f2;
+  width: 90%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: rgba(16,89,255, 1);
+  width: 90%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.login-form ul li input{
+ display:block;	
+  overflow: hidden;
+ list-style-type: none;
+
+
+}
+.login-form ul li {
+ float:left;
+ padding-left:10px;
+ padding-bottom:20px;
+ padding-right:55px;
+ display:block;	
+  overflow: hidden;
+
+}
+.login-form ul li input{
+display:block;	
+}	
+	
+
+
+.form button a{
+  color: #FFFFFF;
+
+}

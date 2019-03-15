@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Page</title>
+<link rel="stylesheet" type="text/css" href=" signupcss.css">
+</head>
+
+<body>
+<h1>Student Information System</h1>
+<div class="nav">
+  <a href="home_trial.html" class="home">Home</a>
+  <a href="studsignin.php" class="student">Student</a>
+  <a href="adminsignin.html" class="admin">Admin</a>
+</div>
+<h2>SIGNUP</h2>
+<div class="container">
+ <div class="form">
+
+	<form action="signup.php" method="post" name="myform" id="register" class="login-form" enctype="multipart/form-data">
+		<input type="text" placeholder="firstname" name="firstname" id="firstid" required onkeyup="fname_validate()"/><br>
+		<input type="text" placeholder="lastname" name="lastname" id="lastid" required onkeyup="lname_validate()"/><br>
+
+
+	  <input type="text" placeholder="username" name="username" id="userid" required onkeyup="user_validate()"/><br>
+	  <input type="input" placeholder="Roll number" name="roll" id="rollid" required onkeyup="roll_validate()" /><br>
+ 	  <input type="input" placeholder="Registration number" name="register" id="registerid" required onkeyup="reg_validate()" /><br>
+	  <input type="email" placeholder="mail" name="mail" id="mailid" required onkeyup="mail_validate()" /><br>
+ 	  <input type="date" placeholder="bday" name="date" id="dob" onFocus="return mail_blank();" required   /><br>
+
+	  <input type="input" placeholder="Phone number" name="number" id="numberid" onFocus="return dob_blank();" required  /><br>
+	  <label> <b>Branch: </b></label>
+	  <select id="branch" name="branch" onFocus="return ph_blank();">
+		<option>   </option>
+		<option>CSE</option>
+		<option>IT</option>
+		<option>ECE</option>
+		<option>EE</option>
+		<option>ME</option>
+		<option>MME</option>
+		<option>CE</option>
+		<option>CHE</option>
+		<option>BT</option>
+	  </select><br></br>
+	  <label><b> Gender: </b></label>
+
+
+	 <input  type="radio" name="gender" value="male" required> <span id="Male" style="color:white;"> Male</span>
+	 <input type="radio" name="gender" value="female" required><span id="FeMale" style="color:white;"> Female</span><br>
+     <textarea class="suggest" placeholder="HOBBIES - Ex: playing badminton, reading books........." name="message" rows="4" cols="46";></textarea><br>
+     <input type="password" placeholder="password" name="pwd1" id="passwordid" required onkeyup="pass_validate()" /><br>
+	 <input type="password" placeholder="confirm password" name="pwd2" id="confirmpassid" required  onkeyup="confirm_validate()" /> <br>
+	 <span style="color:ivory; position:relative; left:30px; font-size:20px">Upload Image:</span><input type="file" value="Choose File"  name="image" style="color:ivory;position:relative;left:20px;">
+     <input type="submit" name = "submit" value="Signin"/>
+
+
+	</form>
+ </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+
+	function fname_validate(){
+      //cod(e goes here
+      var user=document.myform.firstname.value;
+      var username1=document.getElementById("firstid");
+      if((user.charCodeAt(0) >= 65 && user.charCodeAt(0) <=90 )||( user.charCodeAt(0) >=97 && user.charCodeAt(0) <=122 )){
+        //ssalert("wrong");
+        username1.style.borderColor="green";
+          username1.style.backgroundColor="";
+
+      }
+      else{
+        username1.style.borderColor="red";
+          username1.style.backgroundColor="red";
+
+      }
+    }
+
+
+
+	function lname_validate(){
+      //cod(e goes here
+      var user=document.myform.lastname.value;
+      var username1=document.getElementById("lastid");
+      if((user.charCodeAt(0) >= 65 && user.charCodeAt(0) <=90 )||( user.charCodeAt(0) >=97 && user.charCodeAt(0) <=122 )){
+        //ssalert("wrong");
+        username1.style.borderColor="green";
+          username1.style.backgroundColor="";
+
+      }
+      else{
+        username1.style.borderColor="red";
+          username1.style.backgroundColor="red";
+
+      }
+    }
+
+
+
+
+	function user_validate(){
+      //cod(e goes here
+      var user=document.myform.username.value;
+      var username1=document.getElementById("userid");
+      if((user.charCodeAt(0) >= 65 && user.charCodeAt(0) <=90 )||( user.charCodeAt(0) >=97 && user.charCodeAt(0) <=122 )){
+        //ssalert("wrong");
+        username1.style.borderColor="green";
+          username1.style.backgroundColor="";
+
+      }
+      else{
+        username1.style.borderColor="red";
+          username1.style.backgroundColor="red";
+
+      }
+    }
+ function roll_validate(){
+      var roll1=document.getElementById("rollid");
+      var rollno = /[A-Z]/;
+      var rollno1= /[a-z]/;
+      var rollno2= /[0-9]/;
+      if(rollno.test(myform.Roll.value) || rollno1.test(myform.Roll.value) || rollno2.test(myform.Roll.value)){
+        roll1.style.borderColor="green";
+        roll1.style.backgroundColor="";
+      }
+      else{
+        roll1.style.borderColor="red";
+        roll1.style.backgroundColor="red";
+      }
+    }
+
+
+  function reg_validate(){
+     var reg1=document.getElementById("registerid");
+      var regno = /[A-Z]/;
+      var regno1= /[a-z]/;
+      var regno2= /[0-9]/;
+      if(regno.test(myform.register.value) || regno1.test(myform.register.value) || regno2.test(myform.register.value)){
+        reg1.style.borderColor="green";
+        reg1.style.backgroundColor="";
+      }
+      else{
+        reg1.style.borderColor="red";
+        reg1.style.backgroundColor="red";
+
+      }
+
+  }
+
+
+ function pass_validate(){
+   var pass=document.getElementById("passwordid");
+   var pass1= /[0-9]/;
+   var pass2=/[a-z]/;
+   var pass3=/[A-Z]/;
+   if(myform.pwd1.value.length >=8 && pass1.test(myform.pwd1.value) &&pass2.test(myform.pwd1.value) &&pass3.test(myform.pwd1.value) )
+   {
+    pass.style.borderColor="green";
+    pass.style.backgroundColor="";
+
+   }
+   else{
+        pass.style.backgroundColor="red";
+        pass.style.borderColor="red";
+   }
+ }
+
+function confirm_validate()
+{
+    var confpass=document.getElementById("confirmpassid");
+    var confpass1= /[0-9]/;
+    var confpass2=/[a-z]/;
+    var confpass3=/[A-Z]/;
+    if(myform.pwd1.value == myform.pwd2.value){
+      confpass.style.borderColor="green";
+      confpass.style.backgroundColor="";
+
+    }
+    else{
+      confpass.style.borderColor="red";
+      confpass.style.backgroundColor="red";
+    }
+
+}
+
+// JavaScript Document
+var count=0;
+function num_check(str)
+{
+	var reg=/^[0-9]+$/
+	/*var reg=/^\d{6}+$/;*/
+	var str1=str.value;
+	if(!str1.match(reg))
+	{
+		alert("Invalid data entered!!");
+		return false;
+	}
+	return true;
+}
+function ph_blank()
+{
+	var data=document.myform.number.value;
+		if (data=="")
+		{
+			alert("Phone number not entered!!");
+			document.myform.number.focus();
+			return false;
+		}
+		else
+		{
+			var ret=num_check(document.myform.number);
+			if(!ret)
+			{
+				document.myform.number.value="";
+				document.myform.number.focus();
+				return false;
+			}
+			else
+			{
+				if(data.length!=10)
+				{
+					alert("Invalid phone number entered!!");
+					document.myform.number.value="";
+					document.myform.number.focus();
+					return false;
+				}
+			}
+		}
+		return true;
+}
+
+function dob_blank()
+{
+	var data=document.f1.dob.value;
+	if (data=="")
+	{
+		alert("Date of birth not entered!!");
+		document.f1.dob.focus();
+		return false;
+	}
+	return true;
+}
+
+function mail_blank()
+{
+	var data=document.myform.mail.value;
+	if (data=="")
+	{
+		alert("Email id not entered!!");
+		document.myform.mail.focus();
+		return false;
+	}
+	return true;
+}
+
+
+</script>

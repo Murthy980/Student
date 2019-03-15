@@ -1,0 +1,136 @@
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: absolute;
+  top:225px;
+  left:37%;
+  z-index: 1;
+  max-width: 300px;
+  height: 250px;
+  padding: 60px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: rgba(16,89,255, 1);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration:none;
+}
+.form button a{
+  color: #FFFFFF;
+
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 18px;
+}
+.form .message a {
+  color: #b3b3b3;
+  font:25px;
+  text-decoration: none;
+}
+
+.form .forgot a {
+  color: #b3b3b3;
+  font-size:20px;
+  text-decoration: none;
+}
+.nav {
+	height:35px;
+	width:100%;
+	display:inline block;
+	color: blue;
+	padding:0px;
+	margin:0px;
+	background-color:ivory;
+	font-family:arial;
+	font-size: 25px;
+	text-decoration:none;
+}
+.home {
+	position:relative;
+	margin-left:20%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none
+}
+.student {
+	position:relative;
+	margin-left:20%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none
+}
+.admin {
+	position:relative;
+	margin-left:20%;
+	font-family:arial;
+	font-size: 30px;
+	text-decoration:none
+}
+h1{
+	font-size:40px;
+	color: #040DFF;
+	text-align:center;
+	font-family: Trebuchet MS;
+	color:white;
+}
+.reg{
+	color: #b3b3b3 ;
+	font-size:20px;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+h2{
+	position:absolute;
+	top:150px;
+	font-size:30px;
+	color:navajowhite;
+	text-align:left;
+	margin-left:43%;
+	font-family:Trebuchet MS;
+
+}
+body{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(headway-537308-unsplash.jpg);
+	background-repeat:repeat;
+	background-size:cover;
+	overflow-x:hidden;
+}
+input[type="submit"]{
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	background-color: blue;
+	width: 100%;
+	padding: 15px;
+	color: white;
+	font-size: 14px;
+	margin:none;
+	border:none;
+}
